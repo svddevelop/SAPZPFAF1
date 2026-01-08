@@ -28,8 +28,8 @@ CLASS zcl_addtestdata IMPLEMENTATION.
 *    DATA:
 *    out->write( 'it works ' ).
 
-    "fill_ztbl_address( out ).
-    maintenance( out ).
+    fill_ztbl_address( out ).
+    "maintenance( out ).
 
 
   ENDMETHOD.
