@@ -3,10 +3,14 @@
 {
 "FROM":
 [
-"ZTBL_ADDRESS"
+"ZTBL_USERS"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_CITY",
+"ZI_COUNTRY",
+"ZI_STREET"
+],
 "BASE":
 [],
 "ANNO_REF":

@@ -3,7 +3,7 @@
 {
 "FROM":
 [
-"ZTBL_USERS"
+"ZTBL_COUNTRY"
 ],
 "ASSOCIATED":
 [],

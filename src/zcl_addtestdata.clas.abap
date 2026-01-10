@@ -39,73 +39,73 @@ CLASS zcl_addtestdata IMPLEMENTATION.
   METHOD fill_ztbl_address.
 
 
-    DATA: lt_address TYPE TABLE OF ztbl_address.
-
-    out->write( zcl_util=>nr_addr_next(  ) ).
-    out->write( zcl_util=>nr_addr_next(  ) ).
-
-
-*  lt_address = VALUE #(
-*  (
-*  client =  sy-mandt
-*  id = ZCL_UTIL=>nr_addr_next(  )
-*  parent = 0
-*  addr = 'GERMANY'
-*  ae_type = 'L'
-*  )
-*  (
-*  client = sy-mandt
-*  id = ZCL_UTIL=>nr_addr_next(  )
-*  parent = 1
-*  addr = 'BERLIN'
-*  ae_type = 'C'
-*  )
+*    DATA: lt_address TYPE TABLE OF ztbl_address.
 *
-*  (
-*  client = sy-mandt
-*  id = ZCL_UTIL=>nr_addr_next(  )
-*  parent = 2
-*  addr = 'LINDENSTR'
-*  ae_type = 'S'
-*  )
-*  ).
-
-    lt_address = VALUE #(
-    (
-    client = sy-mandt
-    id = zcl_util=>nr_addr_next(  )
-    parent = 2
-    addr = 'KURFÜSTERDAMM'
-    ae_type = 'S'
-    )
-    (
-    client = sy-mandt
-    id = zcl_util=>nr_addr_next(  )
-    parent = 2
-    addr = 'Tiergarten'
-    ae_type = 'S'
-    )
-    (
-    client = sy-mandt
-    id = zcl_util=>nr_addr_next(  )
-    parent = 2
-    addr = 'Abrakadabra'
-    ae_type = 'S'
-    )
-    ).
-
-*    LOOP AT lt_address ASSIGNING FIELD-SYMBOL(<ls_address>).
+*    out->write( zcl_util=>nr_addr_next(  ) ).
+*    out->write( zcl_util=>nr_addr_next(  ) ).
 *
 *
-*    ENDLOOP.
-
-    out->write( lt_address ).
-    INSERT ztbl_address FROM TABLE @lt_address
-    ACCEPTING DUPLICATE KEYS.
-
-    DELETE FROM ztbl_address WHERE id = 0.
-
-    out->write( 'end' ).
+**  lt_address = VALUE #(
+**  (
+**  client =  sy-mandt
+**  id = ZCL_UTIL=>nr_addr_next(  )
+**  parent = 0
+**  addr = 'GERMANY'
+**  ae_type = 'L'
+**  )
+**  (
+**  client = sy-mandt
+**  id = ZCL_UTIL=>nr_addr_next(  )
+**  parent = 1
+**  addr = 'BERLIN'
+**  ae_type = 'C'
+**  )
+**
+**  (
+**  client = sy-mandt
+**  id = ZCL_UTIL=>nr_addr_next(  )
+**  parent = 2
+**  addr = 'LINDENSTR'
+**  ae_type = 'S'
+**  )
+**  ).
+*
+*    lt_address = VALUE #(
+*    (
+*    client = sy-mandt
+*    id = zcl_util=>nr_addr_next(  )
+*    parent = 2
+*    addr = 'KURFÜSTERDAMM'
+*    ae_type = 'S'
+*    )
+*    (
+*    client = sy-mandt
+*    id = zcl_util=>nr_addr_next(  )
+*    parent = 2
+*    addr = 'Tiergarten'
+*    ae_type = 'S'
+*    )
+*    (
+*    client = sy-mandt
+*    id = zcl_util=>nr_addr_next(  )
+*    parent = 2
+*    addr = 'Abrakadabra'
+*    ae_type = 'S'
+*    )
+*    ).
+*
+**    LOOP AT lt_address ASSIGNING FIELD-SYMBOL(<ls_address>).
+**
+**
+**    ENDLOOP.
+*
+*    out->write( lt_address ).
+*    INSERT ztbl_address FROM TABLE @lt_address
+*    ACCEPTING DUPLICATE KEYS.
+*
+*    DELETE FROM ztbl_address WHERE id = 0.
+*
+*    out->write( 'end' ).
 
 
 
@@ -113,8 +113,8 @@ CLASS zcl_addtestdata IMPLEMENTATION.
 
   METHOD maintenance.
 
-    DELETE FROM ztbl_address WHERE id >= 21.
-    out->write( 'maintenance end' ).
+*    DELETE FROM ztbl_address WHERE id >= 21.
+*    out->write( 'maintenance end' ).
 
   ENDMETHOD.
 

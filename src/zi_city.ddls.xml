@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DDLS>
-    <DDLNAME>ZDD_CITY</DDLNAME>
+    <DDLNAME>ZI_CITY</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
-    <DDTEXT>CITY View</DDTEXT>
+    <DDTEXT>CiTY View</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>

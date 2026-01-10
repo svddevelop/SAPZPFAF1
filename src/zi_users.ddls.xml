@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DDLS>
-    <DDLNAME>ZDD_COUNTRY</DDLNAME>
+    <DDLNAME>ZI_USERS</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
-    <DDTEXT>Country View</DDTEXT>
+    <DDTEXT>USER</DDTEXT>
     <SOURCE_TYPE>W</SOURCE_TYPE>
    </DDLS>
   </asx:values>
