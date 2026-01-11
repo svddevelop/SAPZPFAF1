@@ -6,7 +6,9 @@
 "ZTBL_COUNTRY"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_CITY"
+],
 "BASE":
 [],
 "ANNO_REF":

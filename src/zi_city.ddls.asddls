@@ -7,9 +7,12 @@ define view entity ZI_City
   as select from ztbl_city
   association [1..1] to ZI_Country as _Country
     on $projection.CountryId = _Country.CountryId
+  association [1..*] to ZI_Street as _Street
+    on $projection.CityId = _Street.CityId
 {
   key country_id as CountryId,
   key city_id    as CityId,
       city       as CityName,
-      _Country
+      _Country,
+      _Street
 }
