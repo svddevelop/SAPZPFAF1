@@ -39,73 +39,78 @@ CLASS zcl_addtestdata IMPLEMENTATION.
   METHOD fill_ztbl_address.
 
 
-*    DATA: lt_address TYPE TABLE OF ztbl_address.
-*
-*    out->write( zcl_util=>nr_addr_next(  ) ).
-*    out->write( zcl_util=>nr_addr_next(  ) ).
-*
-*
-**  lt_address = VALUE #(
-**  (
-**  client =  sy-mandt
-**  id = ZCL_UTIL=>nr_addr_next(  )
-**  parent = 0
-**  addr = 'GERMANY'
-**  ae_type = 'L'
-**  )
-**  (
-**  client = sy-mandt
-**  id = ZCL_UTIL=>nr_addr_next(  )
-**  parent = 1
-**  addr = 'BERLIN'
-**  ae_type = 'C'
-**  )
-**
-**  (
-**  client = sy-mandt
-**  id = ZCL_UTIL=>nr_addr_next(  )
-**  parent = 2
-**  addr = 'LINDENSTR'
-**  ae_type = 'S'
-**  )
-**  ).
-*
-*    lt_address = VALUE #(
+    DATA: lt_country TYPE TABLE OF ztbl_country.
+    DATA: lt_city TYPE TABLE OF ztbl_city.
+    DATA: lt_street TYPE TABLE OF ztbl_street.
+
+    "out->write( zcl_util=>nr_addr_next(  ) ).
+    "out->write( zcl_util=>nr_addr_next(  ) ).
+
+    lt_country = VALUE #(
+    (
+        client = sy-mandt
+        country_id = 49
+        country = 'GERMANY'
+    )
+    (
+        client = sy-mandt
+        country_id = 1
+        country = 'USA'
+    )
+    ).
+
+    INSERT ztbl_country FROM TABLE @lt_country
+    ACCEPTING DUPLICATE KEYS.
+
+    lt_city = VALUE #(
+    (
+        client = sy-mandt
+        country_id = 49
+        city_id = zcl_util=>nr_addr_next(  )
+        city = 'BERLIN'
+
+     )
+    (
+        client = sy-mandt
+        country_id = 49
+        city_id = zcl_util=>nr_addr_next(  )
+        city = 'MÜNCHEN'
+
+     )
+    (
+        client = sy-mandt
+        country_id = 49
+        city_id = zcl_util=>nr_addr_next(  )
+        city = 'STUTGART'
+
+     )
+    (
+        client = sy-mandt
+        country_id = 1
+        city_id = zcl_util=>nr_addr_next(  )
+        city = 'WASHINGTON'
+
+     )
+    ).
+
+    INSERT ztbl_city FROM TABLE @lt_city
+    ACCEPTING DUPLICATE KEYS.
+
+*    lt_street = value #(
 *    (
-*    client = sy-mandt
-*    id = zcl_util=>nr_addr_next(  )
-*    parent = 2
-*    addr = 'KURFÜSTERDAMM'
-*    ae_type = 'S'
+*
 *    )
-*    (
-*    client = sy-mandt
-*    id = zcl_util=>nr_addr_next(  )
-*    parent = 2
-*    addr = 'Tiergarten'
-*    ae_type = 'S'
-*    )
-*    (
-*    client = sy-mandt
-*    id = zcl_util=>nr_addr_next(  )
-*    parent = 2
-*    addr = 'Abrakadabra'
-*    ae_type = 'S'
-*    )
-*    ).
+*     ).
+
+
+*    LOOP AT lt_address ASSIGNING FIELD-SYMBOL(<ls_address>).
 *
-**    LOOP AT lt_address ASSIGNING FIELD-SYMBOL(<ls_address>).
-**
-**
-**    ENDLOOP.
 *
-*    out->write( lt_address ).
-*    INSERT ztbl_address FROM TABLE @lt_address
-*    ACCEPTING DUPLICATE KEYS.
-*
-*    DELETE FROM ztbl_address WHERE id = 0.
-*
-*    out->write( 'end' ).
+*    ENDLOOP.
+
+
+
+    out->write( 'end' ).
 
 
 
