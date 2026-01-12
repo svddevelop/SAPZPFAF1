@@ -42,6 +42,8 @@ CLASS zcl_util IMPLEMENTATION.
                 number = DATA(lv_customer_id)
                                             ).
 
+
+
         rs_result = CONV zde_bid( lv_customer_id ).
 
 *        out->write( lv_custom_id ).
