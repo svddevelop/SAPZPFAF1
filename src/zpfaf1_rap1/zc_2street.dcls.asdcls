@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_2STREET'
+@MappingRole: true
+define role ZC_2STREET {
+  grant select on ZC_2STREET
+  where INHERITING CONDITIONS FROM ENTITY ZI_2STREET REPLACING { ROOT WITH _BaseEntity };
+}

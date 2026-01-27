@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service-Definition für ZC_2CITY'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_2CITY'
+  }
+}
+define service ZUI_CITY2_O4 provider contracts odata_v4_ui {
+  expose ZC_2CITY;
+}

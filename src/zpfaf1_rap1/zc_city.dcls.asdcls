@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_CITY'
+@MappingRole: true
+define role ZC_CITY {
+  grant select on ZC_CITY
+  where INHERITING CONDITIONS FROM ENTITY ZI_CITY REPLACING { ROOT WITH _BaseEntity };
+}

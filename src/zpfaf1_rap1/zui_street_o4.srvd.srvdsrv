@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service-Definition für ZC_STREET'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_STREET'
+  }
+}
+define service ZUI_STREET_O4 provider contracts odata_v4_ui {
+  expose ZC_STREET;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_2COUNTRY'
+@MappingRole: true
+define role ZC_2COUNTRY {
+  grant select on ZC_2COUNTRY
+  where INHERITING CONDITIONS FROM ENTITY ZI_2COUNTRY REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,46 @@
+managed implementation in class ZBP_R_TBL_2COUNTRY unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_TBL_2COUNTRY alias ZrTbl2country
+persistent table ZTBL_2COUNTRY
+extensible
+draft table ZTBL_2COUNTRY_D
+etag master Locallastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   CountryID;
+
+  field ( readonly )
+   Localcreatedby,
+   Localcreatedat,
+   Locallastchangedby,
+   Locallastchangedat;
+
+  field ( readonly : update )
+   CountryID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZTBL_2COUNTRY corresponding extensible
+  {
+    CountryID = country_id;
+    Country = country;
+    Localcreatedby = localcreatedby;
+    Localcreatedat = localcreatedat;
+    Locallastchangedby = locallastchangedby;
+    Locallastchangedat = locallastchangedat;
+  }
+
+}

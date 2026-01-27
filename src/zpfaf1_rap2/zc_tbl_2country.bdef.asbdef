@@ -1,0 +1,20 @@
+projection implementation in class ZBP_C_TBL_2COUNTRY unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_TBL_2COUNTRY alias ZcTbl2country
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+}

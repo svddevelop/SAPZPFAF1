@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP-Objektknotentyp ZTBL_2CITY",
+    "originalLanguage": "de",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZTBL_2CITY",
+  "sapObjectType": "ZTBL_2CITY",
+  "rootNode": true
+}

@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service-Definition für ZC_2COUNTRY'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_2COUNTRY'
+  }
+}
+define service ZUI_COUNTRY2_O4 provider contracts odata_v4_ui {
+  expose ZC_2COUNTRY;
+}
