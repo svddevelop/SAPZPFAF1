@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_TBL_2CITY000'
+@MappingRole: true
+define role ZR_TBL_2CITY000 {
+  grant select on ZR_TBL_2CITY000
+  where TRUE;
+}

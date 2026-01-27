@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service-Definition für ZC_TBL_2CITY000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TBL_2CITY000'
+  }
+}
+define service ZUI_TBL_2CITY_O4 provider contracts odata_v4_ui {
+  expose ZC_TBL_2CITY000;
+}

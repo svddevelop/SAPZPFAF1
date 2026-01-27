@@ -1,0 +1,47 @@
+managed implementation in class ZBP_R_TBL_2CITY000 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_TBL_2CITY000 alias ZrTbl2city000
+persistent table ZTBL_2CITY
+extensible
+draft table ZTBL_2CITY_D
+etag master Locallastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   CityID;
+
+  field ( readonly )
+   Localcreatedby,
+   Localcreatedat,
+   Locallastchangedby,
+   Locallastchangedat;
+
+  field ( readonly : update )
+   CityID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZTBL_2CITY corresponding extensible
+  {
+    CityID = city_id;
+    CountryID = country_id;
+    City = city;
+    Localcreatedby = localcreatedby;
+    Localcreatedat = localcreatedat;
+    Locallastchangedby = locallastchangedby;
+    Locallastchangedat = locallastchangedat;
+  }
+
+}
