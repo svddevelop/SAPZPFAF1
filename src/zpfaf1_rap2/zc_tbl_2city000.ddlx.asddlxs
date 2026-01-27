@@ -24,7 +24,8 @@ annotate view ZC_TBL_2CITY000 with
   CityID;
   
   @UI.identification: [ {
-    position: 20 
+    position: 20 ,
+    label: 'Country'
   } ]
   @UI.lineItem: [ {
     position: 20 
