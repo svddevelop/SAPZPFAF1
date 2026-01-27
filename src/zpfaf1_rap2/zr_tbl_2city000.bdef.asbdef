@@ -9,9 +9,10 @@ draft table ZTBL_2CITY_D
 etag master Locallastchangedat
 lock master total etag Locallastchangedat
 authorization master( global )
+late numbering
 {
-  field ( mandatory : create )
-   CityID;
+  //field ( mandatory : create )
+  // CityID;
 
   field ( readonly )
    Localcreatedby,
@@ -19,13 +20,15 @@ authorization master( global )
    Locallastchangedby,
    Locallastchangedat;
 
-  field ( readonly : update )
+  field ( readonly  )
    CityID;
 
 
   create;
   update;
   delete;
+
+
 
   draft action Activate optimized;
   draft action Discard;
