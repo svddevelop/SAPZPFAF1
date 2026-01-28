@@ -1,34 +1,35 @@
 @Metadata.allowExtensions: true
 @Metadata.ignorePropagatedAnnotations: true
-@Endusertext: {
-  Label: '###GENERATED Core Data Service Entity'
+@EndUserText: {
+  label: '###GENERATED Core Data Service Entity'
 }
-@Objectmodel: {
-  Sapobjectnodetype.Name: 'ZTBL_2STREET'
+@ObjectModel: {
+  sapObjectNodeType.name: 'ZTBL_2STREET'
 }
 @AccessControl.authorizationCheck: #MANDATORY
 define root view entity ZC_TBL_2STREET
-  provider contract TRANSACTIONAL_QUERY
+  provider contract transactional_query
   as projection on ZR_TBL_2STREET
-  association [1..1] to ZR_TBL_2STREET as _BaseEntity on $projection.STREETID = _BaseEntity.STREETID
+  association [1..1] to ZR_TBL_2STREET as _BaseEntity on $projection.StreetID = _BaseEntity.StreetID
 {
   key StreetID,
+  
   CityID,
   Street,
   @Semantics: {
-    User.Createdby: true
+    user.createdBy: true
   }
   Localcreatedby,
   @Semantics: {
-    Systemdatetime.Createdat: true
+    systemDateTime.createdAt: true
   }
   Localcreatedat,
   @Semantics: {
-    User.Localinstancelastchangedby: true
+    user.localInstanceLastChangedBy: true
   }
   Locallastchangedby,
   @Semantics: {
-    Systemdatetime.Localinstancelastchangedat: true
+    systemDateTime.localInstanceLastChangedAt: true
   }
   Locallastchangedat,
   _BaseEntity
