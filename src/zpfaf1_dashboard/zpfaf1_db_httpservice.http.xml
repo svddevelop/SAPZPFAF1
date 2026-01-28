@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_HTTP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HTTPID>ZPFAF1_DB_HTTPSERVICE</HTTPID>
+   <HTTPTEXT>
+    <ID>ZPFAF1_DB_HTTPSERVICE</ID>
+    <VERSION>I</VERSION>
+    <LANG>D</LANG>
+    <SHORTTEXT>ZPFAF1_DB_HTTPService</SHORTTEXT>
+   </HTTPTEXT>
+   <HTTPHDL>
+    <UCONSERVHANDLER>
+     <ID>ZPFAF1_DB_HTTPSERVICE</ID>
+     <VERSION>I</VERSION>
+     <SERVICEORDER>01</SERVICEORDER>
+     <SERVICEHANDLER>ZCL_PFAF1_DB_HTTPSERVICE</SERVICEHANDLER>
+    </UCONSERVHANDLER>
+   </HTTPHDL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

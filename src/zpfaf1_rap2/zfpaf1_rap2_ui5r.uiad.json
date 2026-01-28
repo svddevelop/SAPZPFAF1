@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "{{appDescription}}",
+    "originalLanguage": "de",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ss"
+  },
+  "ui5AppDetails": {
+    "appId": "zfpaf1_rap2_uimodule"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_622426B1A9C42E172BD4C5FD8773F19289545CFE_TM",
+    "semanticObject": "zpfaf1_rap2_so2",
+    "action": "aa",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_622426B1A9C42E172BD4C5FD8773F19289545CFE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ss"
+      }
+    }
+  ]
+}
