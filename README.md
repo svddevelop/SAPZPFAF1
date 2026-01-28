@@ -11,6 +11,12 @@ every table have standalone bussines OData-UI service in the internal Package ZP
 
 the number range for generation of uniques keys for the tables ZTBL_2CITY, ZTBL_2STREET.
 
+[Link country](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/ui5_ui5/sap/zpfaf1_rap2/index.html?sap-ui-xx-viewcache=false&sap-ui-language=DE&sap-client=100)
+
+[Link city](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/adt/businessservices/odatav4/feap/CuCCxuuHCuC%7DsvsFw%7DsHCxCuC%7DsvsFw%7DsHCDDDEC77nWshV%60sFW%5DhmDDD777777ni%5DshV%60sFW%5DhmscH77DDDE77ni%5DshV%60sFW%5DhmscH/flp.html?sap-ui-xx-viewCache=false&sap-ui-language=DE&sap-client=100#app-preview&/?sap-iapp-state=TASRSE586Z62AX7THXKRS4CVO9P1WM0XK46TE5HE5)
+
+[link street](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/adt/businessservices/odatav4/feap/CuCCxuuHCuC%7DsvsFyysHCxCuC%7DsvsFyysHCDDDEC77nWshV%60sFghfYYh777777ni%5DshV%60sFghfYYhscH77DDDE77ni%5DshV%60sFghfYYhscH/flp.html?sap-ui-xx-viewCache=false&sap-ui-language=DE&sap-client=100#app-preview&/?sap-iapp-state=TASOLTPXFAVG1HEXXIRYO5DSVG0FNOI78A85QDBDL)
+
 ![City list](2city_list.JPG)
 
 ![City item edit](2city_edit.JPG)
