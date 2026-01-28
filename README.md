@@ -15,7 +15,7 @@ the number range for generation of uniques keys for the tables ZTBL_2CITY, ZTBL_
 
 [Link city](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/ui5_ui5/sap/zfpaf1_rap2/index.html?sap-ui-xx-viewcache=false&sap-ui-language=DE&sap-client=100)
 
-[link street](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/ui5_ui5/sap/zpfaf1_rap2/index.html?sap-ui-xx-viewcache=false&sap-ui-language=DE&sap-client=100)
+[link street](https://302ba387-5fca-4464-ab22-8b974aaf9399.abap-web.ap21.hana.ondemand.com/sap/bc/ui5_ui5/sap/zpfsaf1_rap2/index.html?sap-ui-xx-viewcache=false&sap-ui-language=DE&sap-client=100)
 
 ![City list](2city_list.JPG)
 
