@@ -1,34 +1,42 @@
 @Metadata.allowExtensions: true
 @Metadata.ignorePropagatedAnnotations: true
-@Endusertext: {
-  Label: '###GENERATED Core Data Service Entity'
+@EndUserText: {
+  label: '###GENERATED Core Data Service Entity'
 }
-@Objectmodel: {
-  Sapobjectnodetype.Name: 'ZTBL_2CITY000'
+@ObjectModel: {
+  sapObjectNodeType.name: 'ZTBL_2CITY000'
 }
 @AccessControl.authorizationCheck: #MANDATORY
 define root view entity ZC_TBL_2CITY000
-  provider contract TRANSACTIONAL_QUERY
+  provider contract transactional_query
   as projection on ZR_TBL_2CITY000
-  association [1..1] to ZR_TBL_2CITY000 as _BaseEntity on $projection.CITYID = _BaseEntity.CITYID
+  association [1..1] to ZR_TBL_2CITY000 as _BaseEntity on $projection.CityID = _BaseEntity.CityID
 {
   key CityID,
-  CountryID,
+  
+  
+  @Consumption.valueHelpDefinition: [ {
+    entity.name: 'ZPFAF1_RAP2_COUNTRYHELP', 
+    entity.element: 'CountryId', 
+    useForValidation: true
+  } ]
+    CountryID,
+
   City,
   @Semantics: {
-    User.Createdby: true
+    user.createdBy: true
   }
   Localcreatedby,
   @Semantics: {
-    Systemdatetime.Createdat: true
+    systemDateTime.createdAt: true
   }
   Localcreatedat,
   @Semantics: {
-    User.Localinstancelastchangedby: true
+    user.localInstanceLastChangedBy: true
   }
   Locallastchangedby,
   @Semantics: {
-    Systemdatetime.Localinstancelastchangedat: true
+    systemDateTime.localInstanceLastChangedAt: true
   }
   Locallastchangedat,
   _BaseEntity
