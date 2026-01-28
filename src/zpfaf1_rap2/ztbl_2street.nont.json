@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "SAP-Objektknotentyp ZTBL_2STREET",
+    "originalLanguage": "de",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZTBL_2STREET",
+  "sapObjectType": "ZTBL_2STREET",
+  "rootNode": true
+}
