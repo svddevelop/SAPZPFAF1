@@ -11,6 +11,7 @@ define root view entity ZC_TBL_2CITY000
   provider contract transactional_query
   as projection on ZR_TBL_2CITY000
   association [1..1] to ZR_TBL_2CITY000 as _BaseEntity on $projection.CityID = _BaseEntity.CityID
+  association [1..1] to ZPFAF1_RAP2_COUNTRYHELP as _Country on $projection.CountryID = _Country.CountryId
 {
   key CityID,
   
@@ -21,6 +22,7 @@ define root view entity ZC_TBL_2CITY000
     useForValidation: true
   } ]
     CountryID,
+
 
   City,
   @Semantics: {
@@ -39,5 +41,6 @@ define root view entity ZC_TBL_2CITY000
     systemDateTime.localInstanceLastChangedAt: true
   }
   Locallastchangedat,
-  _BaseEntity
+  _BaseEntity ,
+  _Country 
 }
