@@ -14,7 +14,12 @@ define root view entity ZC_TBL_2STREET
 {
   key StreetID,
   
-  CityID,
+  @Consumption.valueHelpDefinition: [ {
+    entity.name: 'ZPFAF1_RAP2_CITYHELPER', 
+    entity.element: 'CityId', 
+    useForValidation: true
+  } ]
+   CityID,
   Street,
   @Semantics: {
     user.createdBy: true
