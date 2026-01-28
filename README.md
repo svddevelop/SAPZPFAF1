@@ -28,7 +28,7 @@ Same search form for the change of the city
 ![Street item choice then city](2street_edit_city.JPG)
 
 -----
-DAdi realisation for two interfaces ZIF_SUM and ZIF_MUL.
+BAdi realisation for two interfaces ZIF_SUM and ZIF_MUL.
 
 By the name of interface call the interface-specific function for sum or for mul.
 
